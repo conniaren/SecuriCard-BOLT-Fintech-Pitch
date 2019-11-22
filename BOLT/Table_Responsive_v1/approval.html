@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  	</script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Table V01</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+</head>
+
+  <div class="container">
+  <h1 class="text-center" >This is a website</h1>
+  <p class="text-center">This is some text.</p>
+  </div>
+
+</head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+        
+        .sidebar {
+            height: 100%;
+            width: 85px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 15px;
+            white-space: nowrap;
+        }
+        
+        .sidebar a {
+            padding: 80px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+        
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        .material-icons,
+        .icon-text {
+            vertical-align: middle;
+        }
+        
+        .material-icons {
+            padding-bottom: 2px;
+        }
+        
+        #main {
+            transition: margin-left .3s;
+            padding: 10px;
+            margin-left: 100px;
+        }
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+	<div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+        <a href="#"><span><i class="material-icons">home</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Home</span></a><br>
+        <a href="#"><i class="material-icons">query_builder</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;Transcations</a></span>
+        </a><br>
+        <a href="#"><i class="material-icons">equalizer</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;Accounting</span></a><br>
+        <a href="#"><i class="material-icons">exposure_plus_2</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;Requests<span></a>
+    </div>
+       <script>
+        var mini = true;
+        function toggleSidebar() {
+            if (mini) {
+                console.log("opening sidebar");
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                this.mini = false;
+            } else {
+                console.log("closing sidebar");
+                document.getElementById("mySidebar").style.width = "85px";
+                document.getElementById("main").style.marginLeft = "85px";
+                this.mini = true;
+            }
+        }
+    </script>
+     <div id="main">
+       <div class="limiter">
+       	<h1>Employee Name and ID:</h1>
+       	</br>
+       	<p>Jon Smith 12345678</p>
+       	</br> </br> </br>
+       	<h1>Department:</h1>
+       	</br>
+       	<p>Tech</p>
+       	</br></br></br>
+       	<h1>Requested Amount:</h1>
+       	</br>
+       	<p>$100</p>
+       	</br></br></br>
+		<!--Put your inputs here -->
+
+		<h1>Details of the Request:</h1>
+		<p>Jon Smith from Tech department wants to purchase Microsoft Azure for his Minecraft Server.</p>
+		<h1>Amount</h1>
+		<input type="button" value="Save" name="save" onclick="askForSave()" />
+		</br></br></br>
+		<input type="button" value="Finished" name="finished" onclick="askForSubmit()" />
+		</br></br></br>
+	    <form id="someForm" action="" method="POST">
+	</div>
+    </div>
+	
+
+
+	
+
+<!--===============================================================================================-->	<script>
+form=document.getElementById("someForm");
+function askForSave() {
+        form.action="save_for_later.php";
+        form.action="http://box.sianware.com/echopost.php";
+        form.submit();
+}
+function askForSubmit() {
+        form.action="submit_for_approval.php";
+        form.submit();
+}
+ 
+</script>
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
