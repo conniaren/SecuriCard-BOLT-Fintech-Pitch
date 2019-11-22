@@ -1,59 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-  	</script>
+    </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  </head>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<style >
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+  .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+button {
+  background-color: #8c9eff;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  opacity: 0.8;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  bottom: 0 ;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <nav class="blue-grey darken-4" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo" style="font-family: 'Bebas Neue', cursive;">SecuriCard</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Sign up</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Sign up</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center amber-text"style="font-family: 'Bebas Neue', cursive;"> Check your account </h1>
+      <div class="row center">
+        <h5 class="header col s12 light">A new credit card monitoring solution for small businesses </h5>
+      </div>
+      <div class="row center">
+       <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> Admin Login</button>
+</div>
+<div id="id01" class="modal">
+  <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+       <img src="coin.png" alt="Avatar" class="avatar"style="width:70px;height:60px;">
+    </div>
+
+   <form action="/action_page.php">
+  <div class="form-group">
+    <label for="email">Company email:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox" >
+    <label><input type="checkbox"> <span>Remember me</span></label>
+  </div>
+  <button type="submit" class="btn btn-default indigo lighten-2">Submit</button>
+</form>      <br><br>
+
+    </div>
+  </div>
+
+
   <div class="container">
-  <h1 class="text-center" >This is a website</h1>
-  <p class="text-center">This is some text.</p>
-</div>
+    <div class="section">
 
-<div class="container">
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text"><i class="material-icons">lock</i></h2>
+            <h5 class="center"style="font-family: 'Bebas Neue', cursive;">Security</h5>
 
-  <h2>Employee Spending</h2>
-  <p> Keep track and manage all of your company financial assets allocated to each employee:</p>            
-  <table class="table table-hover">
-    <thead>
-      <tr class="info">
-        <th>Employee ID</th>
-        <th>Employee Name (First, Last)</th>
-        <th>Credit</th>
-        <th>Date Issued</th>
-        <th>Date Expiry</th>
-        <th>Comments</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>123456</td>
-        <td>John , Doe</td>
-        <td>500</td>
-        <td>09/24/2019</td>
-        <td>09/31/2019</td>
-        <td> Buying Supplied </td>
-      </tr>
-      <tr>
-        <td>123457</td>
-        <td>Mary , Moe</td>
-        <td>500</td>
-        <td>09/24/2019</td>
-        <td>09/31/2019</td>
-        <td> Buying company coffee </td>
-      </tr>
-      <tr>
-        <td>123457</td>
-        <td>July , Doogley</td>
-        <td>2000</td>
-        <td>09/24/2019</td>
-        <td>09/31/2019</td>
-        <td> Replacing printers </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+            <p class="light">Keep your business's money secure by restricting employee access</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text"><i class="material-icons">group</i></h2>
+            <h5 class="center"style="font-family: 'Bebas Neue', cursive;">Customizable</h5>
+
+            <p class="light">With each digital credit card issued, you can customize the allowance and expiration of the funds to limit its usage to just the necessities of your company.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text"><i class="material-icons">mood</i></h2>
+            <h5 class="center"style="font-family: 'Bebas Neue', cursive;">Fast & Accessible</h5>
+
+            <p class="light">Issue and monitor the spending of your company on the web app whenever you want</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer blue-grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text"style="font-family: 'Bebas Neue', cursive;">About</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"style="font-family: 'Bebas Neue', cursive;">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"style="font-family: 'Bebas Neue', cursive;">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>
