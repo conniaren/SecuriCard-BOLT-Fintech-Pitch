@@ -37,7 +37,56 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+<style>
+.example_r {
+color: #000000 !important;
+text-transform: uppercase;
+background: #ffffff;
+padding: 20px;
+border: 4px solid #000000 !important;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+}
+.example_r:hover {
+color: #ff0000 !important;
+border-radius: 50px;
+border-color: #000000 !important;
+transition: all 0.3s ease 0s;
+}
+.example_d {
+color: #000000 !important;
+text-transform: uppercase;
+background: #ffffff;
+padding: 20px;
+border: 4px solid #000000 !important;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+}
+.example_d:hover {
+color: #33cc33 !important;
+border-radius: 50px;
+border-color: #000000 !important;
+transition: all 0.3s ease 0s;
+}
+.body{
+	 font-size: 15px;
+}
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.3s;
+  outline: none;
+}
+.input:focus{
+	border: 3px solid #000000;
+}
+</style>
     <style>
         body {
             font-family: "Lato", sans-serif;
@@ -132,49 +181,39 @@
         }
     </script>
      <div id="main">
-       <div class="limiter">
+       </br></br></br>
        	<h1>Employee Name and ID:</h1>
        	</br>
-       	<p>Jon Smith 12345678</p>
-       	</br> </br> </br>
+       	<p class="body">Jon Smith 12345678</p>
+       	</br> </br>
        	<h1>Department:</h1>
        	</br>
-       	<p>Tech</p>
-       	</br></br></br>
+       	<p class="body">Tech</p>
+       	</br></br>
        	<h1>Requested Amount:</h1>
        	</br>
-       	<p>$100</p>
-       	</br></br></br>
-		<!--Put your inputs here -->
+       	<p class="body">$100</p>
+       	</br></br>
 
 		<h1>Details of the Request:</h1>
-		<p>Jon Smith from Tech department wants to purchase Microsoft Azure for his Minecraft Server.</p>
-		<h1>Amount</h1>
-		<input type="button" value="Save" name="save" onclick="askForSave()" />
-		</br></br></br>
-		<input type="button" value="Finished" name="finished" onclick="askForSubmit()" />
-		</br></br></br>
-	    <form id="someForm" action="" method="POST">
-	</div>
+	</br>
+		<p class="body">Jon Smith from Tech department wants to purchase Microsoft Azure for his Minecraft Server.</p>
+		</br></br>
+		<h1>Approve for:</h1></br>
+		<textarea placeholder ="Mininum $120"class = "input" name="message" rows="5" cols="100"></textarea>
+		</br></br>
+		<button class="example_d">Approve</button>
+		</br></br>
+		<textarea placeholder ="Reasons for rejection:"class = "input" name="message" rows="5" cols="100"></textarea>
+		</br>
+		<button class="example_r">Deny</button>
     </div>
 	
 
 
 	
 
-<!--===============================================================================================-->	<script>
-form=document.getElementById("someForm");
-function askForSave() {
-        form.action="save_for_later.php";
-        form.action="http://box.sianware.com/echopost.php";
-        form.submit();
-}
-function askForSubmit() {
-        form.action="submit_for_approval.php";
-        form.submit();
-}
- 
-</script>
+<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script src="vendor/bootstrap/js/popper.js"></script>
