@@ -13,6 +13,8 @@
   <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link type="image/png" rel="icon" href="coin.png">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 <style >
 .imgcontainer {
   text-align: center;
@@ -103,6 +105,274 @@ span.psw {
   color: red;
   cursor: pointer;
 }
+   body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+h5{
+
+  color:#ffffff;
+}
+.text{
+
+
+  color:#ffffff;
+
+}
+ 
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #ffd54f ; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+
+    top: 50%;
+    left: 50%;
+    transform: translateX(105%) ;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #ffd54f ;
+  }
+  .panel-heading {
+    color: # !important;
+    background-color: #ffd54f  !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  @-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
 </style>
 </head>
 <body>
@@ -121,9 +391,20 @@ span.psw {
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center amber-text"style="font-family: 'Bebas Neue', cursive;"> Check your account </h1>
+      <div class="waveWrapper waveAnimation">
+  <div class="waveWrapperInner bgTop">
+    <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgMiddle">
+    <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgBottom">
+    <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+  </div>
+</div>
+      <h1 class="header center amber-text"style="font-family: 'Bebas Neue', cursive;"> Take back your credit </h1>
       <div class="row center">
-        <h5 class="header col s12 light">A new credit card monitoring solution for small businesses </h5>
+        <h5 class="header col s12 light" style="color=#ffffff">A new credit card monitoring solution for small businesses </h5>
       </div>
       <div class="row center">
        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> Admin Login</button>
@@ -140,13 +421,12 @@ window.onclick = function(event) {
   }
 }
 </script>
-  <form class="modal-content animate" action="/action_page.php" method="post">
+  <form class="modal-content animate" action="BOLT/Table/transactions.html" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
        <img src="coin.png" alt="Avatar" class="avatar"style="width:70px;height:60px;">
     </div>
 
-   <form action="/action_page.php">
   <div class="form-group">
     <label for="email">Company email:</label>
     <input type="email" class="form-control" id="email">
@@ -158,7 +438,16 @@ window.onclick = function(event) {
   <div class="checkbox" >
     <label><input type="checkbox"> <span>Remember me</span></label>
   </div>
-  <button type="submit" class="btn btn-default indigo lighten-2">Submit</button>
+  <script>
+     function myfunction() {
+     
+ }
+
+ var delay = 1000000;
+
+ setTimeout( myfunction, delay )
+  </script>
+  <button onClick= "setTimeout(myfunction,delay);" type="submit" class="btn btn-default indigo lighten-2">Submit</button>
 </form>      <br><br>
 
     </div>
@@ -173,27 +462,27 @@ window.onclick = function(event) {
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center amber-text"><i class="material-icons">lock</i></h2>
-            <h5 class="center"style="font-family: 'Bebas Neue', cursive;">Security</h5>
+            <h5 class="center"style="font-family: 'Bebas Neue', cursive;font-color=#ffffff;">Security</h5>
 
-            <p class="light">Keep your business's money secure by restricting employee access</p>
+            <p class="text" style="font-color=#ffffff">Keep your business's money secure by restricting employee access</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center amber-text"><i class="material-icons">group</i></h2>
-            <h5 class="center"style="font-family: 'Bebas Neue', cursive;">Customizable</h5>
+            <h5 class="center"style="font-family: 'Bebas Neue', cursive;font-color=#ffffff;">Customizable</h5>
 
-            <p class="light">With each digital credit card issued, you can customize the allowance and expiration of the funds to limit its usage to just the necessities of your company.</p>
+            <p class="text" style="font-color=#ffffff">With each digital credit card issued, you can customize the allowance and expiration of the funds to limit its usage to just the necessities of your company.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center amber-text"><i class="material-icons">mood</i></h2>
-            <h5 class="center"style="font-family: 'Bebas Neue', cursive;">Fast & Accessible</h5>
+            <h5 class="center"style="font-family: 'Bebas Neue', cursive;font-color=#ffffff;">Fast & Accessible</h5>
 
-            <p class="light">Issue and monitor the spending of your company on the web app whenever you want</p>
+            <p class="text" style="font-color=#ffffff">Issue and monitor the spending of your company on the web app whenever you want</p>
           </div>
         </div>
       </div>
@@ -202,6 +491,37 @@ window.onclick = function(event) {
     <br><br>
   </div>
 
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2 style="font-family: 'Bebas Neue', cursive;">Pricing</h2>
+    <h4>One plan for all of your growing business needs.</h4>
+  </div>
+  <div class=" animated slideInUp" >
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1 style="font-family: 'Bebas Neue', cursive;">Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>5</strong> Employee Credit Profiles </p>
+          <p><strong>Full</strong> administrative financial control</p>
+          <p><strong>Real-time</strong> requests and transcations feeds</p>
+          <p><strong>Additional</strong> employee profiles for $2/month</p>
+          <p><strong>Total</strong> peace of mind</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$8</h3>
+          <h4>per month</h4>
+          <button class="btn btn-default indigo lighten-2">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+ 
   <footer class="page-footer blue-grey darken-4">
     <div class="container">
       <div class="row">
@@ -223,10 +543,10 @@ window.onclick = function(event) {
         <div class="col l3 s12">
           <h5 class="white-text"style="font-family: 'Bebas Neue', cursive;">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="https://www.linkedin.com/in/vanessa-yang-a4705b178/">Vanessa</a></li>
+            <li><a class="white-text" href="https://www.facebook.com/mark.bai.50">Mark</a></li>
+            <li><a class="white-text" href="https://www.facebook.com/darien.hong">Darien</a></li>
+            <li><a class="white-text" href="https://www.linkedin.com/in/connia-ren/">Connia</a></li>
           </ul>
         </div>
       </div>
